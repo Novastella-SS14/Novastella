@@ -1,50 +1,55 @@
-<!-- NOTE: All code submitted to this repository is licensed under the terms specified in each file’s license header.
-By default, files are licensed under the Mozilla Public License (MPL).
-Secondary licenses may be indicated in the header to facilitate integration with other projects.
+<!-- Пометка: Информация о лицензировании кода размещена в заголовке-лицензии каждого файла с этим кодом.
+По умолчанию, файлы лицензированы при помощи Mozilla Public License (MPL)
+Другие лицензии могут быть указаны в заголовке-лицензии для способствования интеграции с другими проектами.
 
-Uncomment and modify the following line only if you wish to change the file’s license from the default MPL.
-Currently allowed alternatives are: MIT or MPL-2.0-No-Copyleft.
-Files licensed under MPL-2.0-No-Copyleft cannot be ported to strong copyleft licenses (e.g., AGPL or GPL).
-If you wish to change this, do so before publishing the PR. -->
-<!--- LICENSE: MPL -->
+Раскомментируйте и модифицируйте строки в заголовке-лицензии только если вы хотите изменить лицензию файла с MPL.
+Текущие доступные альтернативы: MIT или MPL-2.0-No-Copyleft.
+Файлы лицензированные под MPL-2.0-No-Copyleft не могут быть портированны на проекты с более строгой лицензией копирования (например: APGL или GPL) -->
 
-## About the PR
-<!-- What did you change? -->
+<!--- ЛИЦЕНЗИЯ: MPL -->
 
-## Why / Balance
-<!-- Discuss how this would affect game balance or explain why it was changed. Link any relevant discussions or issues. -->
+<!-- Для больших PR: Разделяйте большой Pull Request на более мелкие, если это возможно. Вынесите общие системы, которыми могут исползоваться в другом контенте в отдельный PR. Изменениях на картах должны быть отдельно от добавления основного контента.
+Это упрощяет оценку пул реквеста и ускоряет его принятие. -->
 
-## Technical details
-<!-- Summary of code changes for easier review. -->
+## О PR
+<!-- Краткая сводка того, что вы изменили или добавили в PR  -->
 
-## Test plan
+## Обоснование изменений
+<!-- Опишите почему изменения были сделаны и как они могут повлиять на игровой баланс. Оставьте ссылку на связанные обсуждения или проблемы -->
+
+## Технические детали
+<!-- Сводка об изменениях кода для более простого рассмотрения. Выделяйте основные добавленные системы и компоненты, для чего они нужны и какой функционал имеют. -->
+
+## Тестирование
+<!-- Опишите как вы тестировали свой PR, а также добавьте небольшой план тестирования, с помощью которого другие пользователи могут протестировать ваши изменения. -->
+
+## Известные проблемы
+<!-- Опишите проблемы, которые есть в ваших системах или которые появились после изменения в текущих системах, но которые вы не можете решить по каким-либо причинам. Также опишите здесь эти причины. -->
+
+## Медиа
+<!-- Добавьте медиа, если PR имеет какие-либо изменениях, которые игроки могут заметить (новые предметы, интерфейс, звуки и т.п.) 
+Исключением являются мелкие фиксы и переработки систем, не затрагивающие функционала. -->
+
+## Критические изменения
+<!-- Список всех критических изменений: изменения директорий, наименований публичных классов, методов и полей, переработка систем, переименование прототипов, используемых на картах. Также добавьте инструкцию для исправления возникших проблем. -->
+
+## Требования
+<!-- Подтвердите следующие, поставив Х в квадратных скобках без пробела внутри ([X]). --> 
+- [ ] Я прочитал и следую [Руководство по PR](PULL_REQUEST_GUIDELINES.md) и [Руководству по CL](CHANGELOG_GUIDELINES)
+- [ ] Я протестировал изменениях в этом PR и добавил инструкции по его тестированию.
+- [ ] Я добавил медиа для этого PR или изменения не требуют внутриигровой демонстрации.
+- [ ] В добавляемых изменениях нету известных мне проблем, которые не удалось исправить.
+- [ ] Я описал критические изменения и способ их исправления или таких изменений нет.
+<!-- Вы должны понимать, что игнорирование этих требований может повлиять на закрытие вашего PR тех. администрацией для сохранности функционирования сервера. -->
+
+## Список изменений
+<!-- Добавьте запись, чтобы уведомить игроков о добавлении новых возможностей или изменениях, которые могут повлиять на их геймплей.
+Удостоверьте, что вы ознакомились с руководством по созданию списков изменений и блок с списком изменений был раскомментирован.
+Список изменений должен включать символ :cl:, чтобы бот смог распознать изменения и добавить их в игровой список изменений.
 <!--
-Describe how you tested the pull request, and how someone reviewing this PR can test it themselves.
--->
-
-## Media
-<!-- Attach media if the PR makes ingame changes (clothing, items, features, etc).
-Small fixes/refactors are exempt. Media may be used in SS14 progress reports with credit. -->
-
-## Requirements
-<!-- Confirm the following by placing an X in the brackets without spaces inside (for example: [X] ): -->
-- [ ] I have read and am following the [Pull Request and Changelog Guidelines](https://docs.goobstation.com/en/general-development/codebase-info/pull-request-guidelines.html).
-- [ ] I have tested this pull request and written instructions on how to test it
-- [ ] I have added media to this PR or it does not require an in-game showcase.
-<!-- You should understand that not following the above may get your PR closed at maintainer’s discretion -->
-
-## Breaking changes
-<!-- List any breaking changes, including namespaces, public class/method/field changes, prototype renames; and provide instructions for fixing them.
-This will be posted in #codebase-changes. -->
-
-## Changelog
-<!-- Add a Changelog entry to make players aware of new features or changes that could affect gameplay.
-Make sure to read the guidelines and take this Changelog template out of the comment block in order for it to show up.
-Changelog must have a :cl: symbol, so the bot recognizes the changes and adds them to the game's changelog. -->
-<!--
-:cl:
-- add: Added fun!
-- remove: Removed fun!
-- tweak: Changed fun!
-- fix: Fixed fun!
+ :cl:
+- add: Добавлено веселье!
+- remove: Удалено веселье!
+- tweak: Изменено веселье!
+- fix: Починено веселье!
 -->
